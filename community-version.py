@@ -173,18 +173,11 @@ def init_args_parser():
 
     return args
 
-<<<<<<< HEAD:commandLine/community-version.py
 
 def store_ascii_art(image_ascii):
     with open("image_ascii.txt", "w") as f:
         f.write(image_ascii)
 
-=======
-# Storing ascii art
-def store_ascii_art(image_ascii):
-    with open("image_ascii.txt", "w") as f:
-        f.write(image_ascii)
->>>>>>> 5b9e9cfc644203949e245f75a0ac65fed2c0161e:community-version.py
 
 
 if __name__ == "__main__":
@@ -242,9 +235,10 @@ if __name__ == "__main__":
     # display the ASCII art to the console
     capture = handle_image_print(image_ascii, color, args.store_art)
 
-    ### Save the image ###
+    #Saving ascii text
     store_ascii_art(image_ascii)
-    
+
+    ### Save the image ###
     if args.store_art:
         try:
             if args.store_art[-4:] == ".txt":
